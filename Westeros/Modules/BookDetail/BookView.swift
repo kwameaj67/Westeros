@@ -19,10 +19,9 @@ struct BookView: View {
 
                 VStack {
                     if let book = viewModel.book {
-                        if let name = book.name {
-                            TitleRow(title: name)
-                                .padding(.top, 32)
-                        }
+                        TitleRow(title: book.name)
+                            .padding(.top, 32)
+
 
                         ScrollView (.vertical, showsIndicators: false) {
                             Group {

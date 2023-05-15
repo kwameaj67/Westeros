@@ -19,10 +19,8 @@ struct CharacterView: View {
 
                 VStack {
                     if let character = viewModel.character {
-                        if let name = character.name {
-                            TitleRow(title: name)
-                                .padding(.top, 32)
-                        }
+                        TitleRow(title: character.name)
+                            .padding(.top, 32)
 
                         ScrollView (.vertical, showsIndicators: false) {
                             Group {
